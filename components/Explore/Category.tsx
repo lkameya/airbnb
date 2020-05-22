@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Image, Text } from "react-native";
 
-function Category({ imageUri }) {
+function Category({ imageUri, name }) {
   return (
     <View
       style={{
@@ -24,7 +24,7 @@ function Category({ imageUri }) {
         />
       </View>
       <View style={{ flex: 1, paddingLeft: 10, paddingTop: 10 }}>
-        <Text>Home</Text>
+        <Text>{name}</Text>
       </View>
     </View>
   );
